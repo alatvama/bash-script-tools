@@ -1,0 +1,1 @@
+find $PWD -mindepth 2 -type f -exec mv -i '{}' $PWD ';'
