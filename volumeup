@@ -1,0 +1,3 @@
+#!/bin/bash
+mkdir volumeup
+for f in *; do sox -v 2.0 "$f" "volumeup/$f"; done
