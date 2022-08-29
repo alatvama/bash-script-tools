@@ -1,0 +1,3 @@
+#!/bin/bash
+mkdir octaveup
+for f in *; do sox "$f" "octaveup/$f" speed 2; done
