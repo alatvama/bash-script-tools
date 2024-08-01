@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Check if the filename is provided as an argument
+if [ -z "$1" ]; then
+  echo "Usage: $0 filename.wav"
+  exit 1
+fi
+
+# Assign the first argument to the variable f
+f="$1"
+
+# Use sox to process the file
+sox -V "$f" "${f%.wav}_downmix.wav" remix 1v0.3694,3v0.2612,4v0.3694 2v0.3694,3v0.2612,5v0.3694
