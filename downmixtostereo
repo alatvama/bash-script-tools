@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Downmix (at least) 6-channel wav files to stereo
 # Check if the filename is provided as an argument
 if [ -z "$1" ]; then
   echo "Usage: $0 filename.wav"
